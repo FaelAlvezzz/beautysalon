@@ -26,10 +26,10 @@ img {
   /* Colors */
   --hue: 159;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
-  --base-color-alt: hsl(var(--hue) 57% 53%);
-  --title-color: hsl(var(--hue) 41% 10%);
+  --base-color: hsla(270, 83%, 63%, 1);
+  --base-color-second: hsla(270, 22%, 83%, 1);
+  --base-color-alt: hsla(270, 33%, 15%, 1);
+  --title-color: hsla(270, 33%, 15%, 1);
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
@@ -38,8 +38,8 @@ img {
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1rem;
 
-  --title-font: 'Poppins', sans-serif;
-  --body-font: 'DM Sans', sans-serif;
+  --title-font: 'Raleway', sans-serif;
+  --body-font: 'Montserrat', sans-serif;
 }
 
 /*======= BASE =======*/
@@ -422,8 +422,11 @@ nav.show div.icon-close {
 
 /*======= SWIPER =======*/
 .swiper-slide {
+  width: 100%;
   height: auto;
   padding: 4rem 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .swiper-pagination-bullet {
