@@ -1,25 +1,39 @@
 /* abre e fecha o menu quando clicar no icone: hamburgue e x */
-const nav = document.querySelector('#header nav')
+const nav = document.queryElementById('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
-for (const element of toggle) {
-  element.addEventListener('click', function () {
-    nav.classList.toggle('show')
-  })
-}
+toggle.forEach(element => {
+  element.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+});
+
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('show');
+  });
+});
+
 
 /* quando clicar em um item do menu, esconder o menu */
 const links = document.querySelectorAll('nav ul li a')
 
-for (const link of links) {
-  link.addEventListener('click', function () {
-    nav.classList.remove('show')
-  })
-}
+toggle.forEach(element => {
+  element.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+});
+
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('show');
+  });
+});
+
 
 /* mudar o header da página quando der scroll */
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
+const header = document.querySelector('#header');
+const navHeight = header.offsetHeight;
 
 function changeHeaderWhenScroll() {
   if (window.scrollY >= navHeight) {
